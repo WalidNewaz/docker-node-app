@@ -18,9 +18,9 @@ jobs: # a collection of steps
 
     steps:
       - checkout # special step to check out source code to working directory
-      - run:
-          name: update-npm
-          command: 'sudo npm install -g npm@latest'
+      # - run:
+      #     name: update-npm
+      #     command: 'sudo npm install -g npm@latest'
 
       # Download and cache dependencies
       - restore_cache: # special step to restore the dependency cache
@@ -38,3 +38,11 @@ jobs: # a collection of steps
 
       # run tests!
       - run: npm test
+      - store_artifacts:
+          path: test-results.xml
+          prefix: tests
+      - store_artifacts:
+          path: coverage
+          prefix: coverage
+      - store_test_results:
+          path: test-results.xml
