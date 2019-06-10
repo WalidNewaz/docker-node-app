@@ -4,7 +4,7 @@
     "description": "This is a sample node service that is deployed within a docker container",
     "main": "server.js",
     "scripts": {
-      "test": "echo \"Error: no test specified\"",
+      "test": "",
       "start": "node ./server.js"
     },
     "author": "",
