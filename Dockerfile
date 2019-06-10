@@ -12,8 +12,10 @@ RUN npm install
 
 COPY . /app
 
-# Start the app
-CMD ["node","server.js"]
+ENV NODE_ENV production
 
 # replace this with your application's default port
 EXPOSE 80
+
+# Start the app
+CMD ["node","server.js"]
