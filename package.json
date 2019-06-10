@@ -1,10 +1,10 @@
 {
   "name": "docker-node-app",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "This is a sample node service that is deployed within a docker container",
   "main": "server.js",
   "scripts": {
-    "test": "",
+    "test": "mocha",
     "start": "node server.js"
   },
   "author": "",
