@@ -1,0 +1,28 @@
+{
+    "name": "docker-node-app",
+    "version": "0.0.1",
+    "description": "This is a sample node service that is deployed within a docker container",
+    "main": "server.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node ./server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "nodemonConfig": {
+      "ignore": [
+        "test/*",
+        "docs/*"
+      ],
+      "delay": "2500"
+    },
+    "dependencies": {
+      "express": "^4.0.0",
+      "nodemon": "^1.19.1"
+    },
+    "devDependencies": {
+      "mocha": "^6.1.4",
+      "chai": "^4.2.0",
+      "sinon": "^7.3.2"
+    }
+  }
